@@ -1,0 +1,13 @@
+package customeexception;
+
+public class UncheckedCustomException extends RuntimeException{
+
+	
+	try {
+		throw new Exception("This is custome exception")
+	}
+	 {
+		
+	}
+
+}

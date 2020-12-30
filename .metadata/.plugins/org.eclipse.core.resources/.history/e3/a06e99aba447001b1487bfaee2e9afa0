@@ -1,0 +1,19 @@
+package stringbasic;
+
+public class StringBasics {
+
+	public static void main(String[] args) {
+		String str ="Nikhil";
+		for (int i = 0; i < str.length(); i++) {
+			System.out.println(str.charAt(i));
+			
+		}
+		for (int i = str.length(); i < ; i++) {
+			System.out.println(str.charAt(i));
+			
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package abstractionAssignment;
+
+public class DELLNotebook  extends DELL{
+	
+
+	@Override
+	public void click() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void main(String[] args) {
+		
+		TouchScreenLaptop dellnotebook=new DELLNotebook();
+		dellnotebook.click();
+		dellnotebook.scroll();
+		
+
+	}
+
+
+}

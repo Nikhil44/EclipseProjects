@@ -1,0 +1,13 @@
+package exception;
+
+public class Division {
+	
+	int a, b,c;
+	
+ 
+	Sysou
+	 public static void main(String[] args) {
+		System.out.println("Please enter numbers: ");
+	}
+
+}

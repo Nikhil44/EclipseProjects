@@ -1,0 +1,10 @@
+package abstraction;
+
+ class ThreeSeries  extends BMW{
+
+	@Override
+	 protected void accelerate() {
+		System.out.println("Inside the ThreeSeries Accelerator method ");
+	}
+
+}

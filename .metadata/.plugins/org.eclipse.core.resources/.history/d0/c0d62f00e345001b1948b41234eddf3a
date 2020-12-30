@@ -1,0 +1,5 @@
+package abstractionAssignment;
+
+public interface TouchScreenLaptop {
+
+}

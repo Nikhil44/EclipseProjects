@@ -1,0 +1,10 @@
+package collections;
+
+public class DifferentSetClasses {
+
+	public static void main(String[] args) {
+
+		Random rd = new Random();
+	}
+
+}

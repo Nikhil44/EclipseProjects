@@ -1,0 +1,10 @@
+package iostream;
+
+public class ReaderandWritter {
+
+	public static void main(String[] args) {
+FileReader fr;
+FileWritter fw;
+	}
+
+}

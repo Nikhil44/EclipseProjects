@@ -1,0 +1,7 @@
+package customeexception;
+
+public class UncheckedCustomException extends RuntimeException{
+
+	
+
+}

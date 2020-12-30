@@ -1,0 +1,9 @@
+package collections;
+
+public class RandomDemo {
+
+	public static void main(String[] args) {
+
+	}
+
+}

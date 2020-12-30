@@ -1,0 +1,9 @@
+package abstractionAssignment;
+
+public class DELLNotebook  extends DELL{
+
+	public static void main(String[] args) {
+
+	}
+
+}

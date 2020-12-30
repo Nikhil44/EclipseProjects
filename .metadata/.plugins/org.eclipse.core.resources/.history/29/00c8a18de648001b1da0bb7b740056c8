@@ -1,0 +1,9 @@
+package collections;
+
+public class ArrayAndArrayListComparision {
+
+	public static void main(String[] args) {
+		Object[] obj = new Object[1000000]; 
+	}
+
+}

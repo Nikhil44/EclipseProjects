@@ -1,0 +1,8 @@
+package inheritancepractice.MultilevelInheritance;
+
+public class Parent {
+ void f1() {
+	 System.out.println("Inside f1 method of parent class");
+ }
+ 
+}

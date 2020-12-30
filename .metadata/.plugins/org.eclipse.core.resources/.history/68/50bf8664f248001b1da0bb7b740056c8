@@ -1,0 +1,13 @@
+package collections;
+
+import java.util.Random;
+
+public class DifferentSetClasses {
+
+	public static void main(String[] args) {
+
+		Random rd = new Random();
+		HashSet<Integer> set = new HashSet<>();
+	}
+
+}

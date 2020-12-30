@@ -1,0 +1,9 @@
+package inheritancepractice.MultilevelInheritance;
+
+public class MultiLevelTest {
+
+	public static void main(String[] args) {
+   
+	}
+
+}

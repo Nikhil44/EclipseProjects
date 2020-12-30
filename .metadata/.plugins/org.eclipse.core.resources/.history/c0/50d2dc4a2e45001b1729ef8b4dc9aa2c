@@ -1,0 +1,17 @@
+package inheritancepractice.MultilevelInheritance;
+
+public class MultiLevelTest extends Child{
+	
+	  public static void display() {
+		  System.out.println("Display Method from MultiLevelTest class");
+	  }
+
+	public static void main(String[] args) {
+		Parent ch = new MultiLevelTest();
+		ch.f1();
+		//ch.f2();
+		ch.display();
+   
+	}
+
+}

@@ -1,0 +1,14 @@
+package flowControlStaements;
+
+public class ForLoop {
+
+	public static void main(String[] args) {
+ int i=1;
+ for(;i<20;) {
+	
+	 System.out.println("The value of i is : "+ i);
+	 i++;
+ }
+	}
+
+}

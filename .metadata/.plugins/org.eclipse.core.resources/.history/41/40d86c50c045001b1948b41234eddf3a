@@ -1,0 +1,15 @@
+package abstraction;
+
+public class Test {
+
+	public static void main(String[] args) {
+    BMW threeSeries= new ThreeSeries();
+    threeSeries.accelerate();
+    threeSeries.commonFunction();
+	
+    
+    BMW fiveSeries= new FiveSeries();
+	
+	}
+
+}

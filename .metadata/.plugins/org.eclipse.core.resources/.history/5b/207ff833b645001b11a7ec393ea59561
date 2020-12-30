@@ -1,0 +1,8 @@
+package constructorChaining;
+
+public class SuperClass {
+	
+public SuperClass() {
+	
+}
+}

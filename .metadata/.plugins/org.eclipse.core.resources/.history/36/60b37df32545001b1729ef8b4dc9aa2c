@@ -1,0 +1,7 @@
+package inheritancepractice.MultilevelInheritance;
+
+public class Child {
+void f2() {
+	System.out.println("Inside f2 method of child class");
+}
+}

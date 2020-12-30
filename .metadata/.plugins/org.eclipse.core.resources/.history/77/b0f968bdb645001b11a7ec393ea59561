@@ -1,0 +1,14 @@
+package constructorChaining;
+
+public class SuperClass {
+	int x;
+public SuperClass() {
+	System.out.println("No Arg Super Class");
+	
+}
+ public SuperClass(int x) {
+	 this.x=x;
+	 System.out.println("One Arg Super Class");
+	 
+ }
+}

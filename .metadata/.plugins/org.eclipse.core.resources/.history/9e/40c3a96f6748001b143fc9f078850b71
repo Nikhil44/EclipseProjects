@@ -1,0 +1,15 @@
+package iostream;
+
+import java.io.*;
+
+public class FIleOutputStream {
+
+	public static void main(String[] args) {
+		
+		File file = new File("C:\\Users\\HP\\Desktop\\FileInputStream.txt");
+		FileInputStream input = new FileInputStream(file);
+		FileOutputStream output = new FileOutputStream(file);
+
+	}
+
+}

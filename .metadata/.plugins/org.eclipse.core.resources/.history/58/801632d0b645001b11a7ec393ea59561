@@ -1,0 +1,8 @@
+package constructorChaining;
+
+public class ChildClass extends SuperClass{
+	public ChildClass() {
+		System.out.println("No Arg ChildClass Constructor");
+	}
+
+}

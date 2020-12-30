@@ -1,0 +1,12 @@
+package exception;
+
+public class Division {
+	
+	int a, b,c;
+	
+
+	 public static void main(String[] args) {
+		
+	}
+
+}

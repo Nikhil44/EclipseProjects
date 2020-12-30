@@ -1,0 +1,33 @@
+package flowControlStaements;
+
+public class SwitchStatment {
+
+	public static void main(String[] args) {
+		int x = 20;
+		switch(x) {
+		case 10:System.out.println("The value of x is 10");
+		break;
+		case 20: System.out.println("The value of x is 20");
+		break;
+		case 30: System.out.println("The value of x is 30");
+		break;
+		default: System.out.println("The value of x is 40");
+			
+		}
+		
+		//Fall through 
+		
+		int y = 10;
+		switch(y) {
+		case 10:
+		case 20: System.out.println("The value of x is 20===========");
+		break;
+		case 30: System.out.println("The value of x is 30");
+		break;
+		default: System.out.println("The value of x is 40");
+			
+		}
+
+	}
+
+}

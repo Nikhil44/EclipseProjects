@@ -1,0 +1,9 @@
+package com;
+
+public class StaticBlock {
+
+	static {
+		System.out.println("This is static block and it can be executed without main method");
+		
+	}
+}

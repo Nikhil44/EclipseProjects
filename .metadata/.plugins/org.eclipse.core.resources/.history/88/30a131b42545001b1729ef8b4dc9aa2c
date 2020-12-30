@@ -1,0 +1,5 @@
+package inheritancepractice.MultilevelInheritance;
+
+public class Child {
+
+}

@@ -1,0 +1,20 @@
+package com;
+
+public class StaticMethods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Inside main method1");
+		StaticMethods.staticmethod("Static method inside main method");
+		System.out.println("Inside main method");
+	}
+	static void staticmethod(String str) {
+		System.out.println("Static method");
+	}
+	static {
+		StaticMethods.staticmethod("Static method inside static block");
+		System.out.println("Inside static block");
+		
+	}
+
+}

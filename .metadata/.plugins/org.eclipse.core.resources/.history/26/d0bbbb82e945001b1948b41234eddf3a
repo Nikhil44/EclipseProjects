@@ -1,0 +1,16 @@
+package abstractionAssignment;
+
+public class HPNotebook {
+	public void click() {
+		
+		System.out.println("click method in HPNotebook");
+	}
+	public static void main(String[] args) {
+		HPNotebook hpnotebook = new HPNotebook();
+		
+  
+	 
+ }
+	}
+
+

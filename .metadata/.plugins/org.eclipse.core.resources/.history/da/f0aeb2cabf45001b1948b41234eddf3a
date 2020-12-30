@@ -1,0 +1,16 @@
+package abstraction;
+
+public class Test {
+
+	public static void main(String[] args) {
+    BMW bmw= new BMW() {
+		
+		@Override
+		void accelerate() {
+			// TODO Auto-generated method stub
+			
+		}
+	};
+	}
+
+}

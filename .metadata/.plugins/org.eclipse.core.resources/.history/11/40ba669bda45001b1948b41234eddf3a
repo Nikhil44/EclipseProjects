@@ -1,0 +1,27 @@
+package interfaces;
+
+public interface Car {
+	
+	//Interface methods are public and abstract by default.
+	void go();
+	void stop();
+	
+	//We can add static methods in interface
+	public static void method1() {
+		System.out.println("This is static method from car interface");
+		
+	}
+	
+	// We can use private but method can not be accessed
+	private static void method2() {
+		System.out.println("This is private static method in car interface");
+		
+	}
+	
+	//Interface can not have protected access modifier
+	
+//	protected static void method3() {
+//		
+//	}
+
+}

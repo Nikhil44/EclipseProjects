@@ -1,0 +1,9 @@
+package exception;
+
+public class ArrayIndexooDemo {
+
+	public static void main(String[] args) {
+
+	}
+
+}

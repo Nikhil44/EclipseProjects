@@ -1,0 +1,1763 @@
+!SESSION 2020-12-14 07:14:10.828 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=14.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-12-14 07:16:53.108
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-14 07:16:53.108
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@46d69ca4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5c9b5e62,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-14 07:17:49.867
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 4 2020-12-14 07:31:45.437
+!MESSAGE JavaBuilder handling CoreException while building: Practice_Java_Project
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to init ct.sym for C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\jrt-fs.jar
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:79)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:147)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:312)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:650)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:181)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: File C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\ct.sym does not exist
+	at org.eclipse.jdt.internal.compiler.util.CtSym.init(CtSym.java:126)
+	at org.eclipse.jdt.internal.compiler.util.CtSym.<init>(CtSym.java:120)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.lambda$1(JRTUtil.java:136)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(Unknown Source)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getCtSym(JRTUtil.java:133)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:77)
+	... 17 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 0 2020-12-14 07:31:45.439
+!MESSAGE Failed to init ct.sym for C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\jrt-fs.jar
+!STACK 0
+java.io.FileNotFoundException: File C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\ct.sym does not exist
+	at org.eclipse.jdt.internal.compiler.util.CtSym.init(CtSym.java:126)
+	at org.eclipse.jdt.internal.compiler.util.CtSym.<init>(CtSym.java:120)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.lambda$1(JRTUtil.java:136)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(Unknown Source)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getCtSym(JRTUtil.java:133)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:77)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:147)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:312)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:650)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:181)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2020-12-14 07:32:04.158
+!MESSAGE JavaBuilder handling CoreException while building: Practice_Java_Project
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to init ct.sym for C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\jrt-fs.jar
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:79)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:147)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:312)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:650)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:181)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: File C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\ct.sym does not exist
+	at org.eclipse.jdt.internal.compiler.util.CtSym.init(CtSym.java:126)
+	at org.eclipse.jdt.internal.compiler.util.CtSym.<init>(CtSym.java:120)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.lambda$1(JRTUtil.java:136)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(Unknown Source)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getCtSym(JRTUtil.java:133)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:77)
+	... 17 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 0 2020-12-14 07:32:04.158
+!MESSAGE Failed to init ct.sym for C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\jrt-fs.jar
+!STACK 0
+java.io.FileNotFoundException: File C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\ct.sym does not exist
+	at org.eclipse.jdt.internal.compiler.util.CtSym.init(CtSym.java:126)
+	at org.eclipse.jdt.internal.compiler.util.CtSym.<init>(CtSym.java:120)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.lambda$1(JRTUtil.java:136)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(Unknown Source)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getCtSym(JRTUtil.java:133)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:77)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:147)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:312)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:650)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:181)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2020-12-14 07:32:05.198
+!MESSAGE JavaBuilder handling CoreException while building: Practice_Java_Project
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to init ct.sym for C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\jrt-fs.jar
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:79)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:147)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:312)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:650)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:181)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: File C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\ct.sym does not exist
+	at org.eclipse.jdt.internal.compiler.util.CtSym.init(CtSym.java:126)
+	at org.eclipse.jdt.internal.compiler.util.CtSym.<init>(CtSym.java:120)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.lambda$1(JRTUtil.java:136)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(Unknown Source)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getCtSym(JRTUtil.java:133)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:77)
+	... 17 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 0 2020-12-14 07:32:05.199
+!MESSAGE Failed to init ct.sym for C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\jrt-fs.jar
+!STACK 0
+java.io.FileNotFoundException: File C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\ct.sym does not exist
+	at org.eclipse.jdt.internal.compiler.util.CtSym.init(CtSym.java:126)
+	at org.eclipse.jdt.internal.compiler.util.CtSym.<init>(CtSym.java:120)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.lambda$1(JRTUtil.java:136)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(Unknown Source)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getCtSym(JRTUtil.java:133)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:77)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:147)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:312)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:650)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:181)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-12-14 07:52:31.616 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-12-14 08:01:53.649
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-14 08:01:53.649
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@200e6029,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@41120e48,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-14 08:02:16.154
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 4 2020-12-14 08:05:11.814
+!MESSAGE JavaBuilder handling CoreException while building: Java_StepbyStep_Practice
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to init ct.sym for C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\jrt-fs.jar
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:79)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:147)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:312)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:650)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:181)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: File C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\ct.sym does not exist
+	at org.eclipse.jdt.internal.compiler.util.CtSym.init(CtSym.java:126)
+	at org.eclipse.jdt.internal.compiler.util.CtSym.<init>(CtSym.java:120)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.lambda$1(JRTUtil.java:136)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(ConcurrentHashMap.java:1916)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getCtSym(JRTUtil.java:133)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:77)
+	... 17 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 0 2020-12-14 08:05:11.843
+!MESSAGE Failed to init ct.sym for C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\jrt-fs.jar
+!STACK 0
+java.io.FileNotFoundException: File C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\ct.sym does not exist
+	at org.eclipse.jdt.internal.compiler.util.CtSym.init(CtSym.java:126)
+	at org.eclipse.jdt.internal.compiler.util.CtSym.<init>(CtSym.java:120)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.lambda$1(JRTUtil.java:136)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(ConcurrentHashMap.java:1916)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getCtSym(JRTUtil.java:133)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:77)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:147)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:312)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:650)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:181)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2020-12-14 08:22:14.256
+!MESSAGE JavaBuilder handling CoreException while building: Step_by_step_Java
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to init ct.sym for C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\jrt-fs.jar
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:79)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:147)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:312)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:650)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:181)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: File C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\ct.sym does not exist
+	at org.eclipse.jdt.internal.compiler.util.CtSym.init(CtSym.java:126)
+	at org.eclipse.jdt.internal.compiler.util.CtSym.<init>(CtSym.java:120)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.lambda$1(JRTUtil.java:136)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(ConcurrentHashMap.java:1916)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getCtSym(JRTUtil.java:133)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:77)
+	... 17 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 0 2020-12-14 08:22:14.257
+!MESSAGE Failed to init ct.sym for C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\jrt-fs.jar
+!STACK 0
+java.io.FileNotFoundException: File C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre\lib\ct.sym does not exist
+	at org.eclipse.jdt.internal.compiler.util.CtSym.init(CtSym.java:126)
+	at org.eclipse.jdt.internal.compiler.util.CtSym.<init>(CtSym.java:120)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.lambda$1(JRTUtil.java:136)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(ConcurrentHashMap.java:1916)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getCtSym(JRTUtil.java:133)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:77)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:147)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:312)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:650)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:181)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-12-21 06:59:44.802 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-12-21 07:00:14.600
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-21 07:00:14.600
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3d718248,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2cdb5974,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-21 07:00:40.292
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-12-21 13:31:09.678 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-12-21 13:31:26.801
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2020-12-21 13:31:35.161
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-21 13:31:35.161
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4bff28e7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@39e7e040,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-21 13:31:50.728
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-12-21 13:49:57.860 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-12-21 13:50:25.464
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-21 13:50:25.464
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7962a746,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c31de5d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-21 13:50:35.276
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-12-21 18:51:00.015 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-12-21 18:51:59.022
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2020-12-21 18:52:05.788
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-21 18:52:05.788
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@26495639,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@45c408a4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-21 18:52:21.896
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-12-22 06:47:35.936 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 4 567 2020-12-22 06:55:16.436
+!MESSAGE Could not read metadata for 'C:\Users\HP\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.root\.indexes\properties.index'. Unexpected version: 0.
+
+!ENTRY org.eclipse.jface 2 0 2020-12-22 06:55:23.641
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-22 06:55:23.641
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@584136c1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@51d88c38,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jdt.launching 4 4 2020-12-22 06:55:34.063
+!MESSAGE Content is not allowed in prolog.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:978)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:541)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin.readInstallInfo(LaunchingPlugin.java:1047)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin.timeStampChanged(LaunchingPlugin.java:1011)
+	at org.eclipse.jdt.internal.launching.StandardVMType.getLibraryInfo(StandardVMType.java:232)
+	at org.eclipse.jdt.internal.launching.StandardVMType.getDefaultLibraryLocations(StandardVMType.java:457)
+	at org.eclipse.jdt.internal.launching.StandardVMType.canDetectDefaultSystemLibraries(StandardVMType.java:267)
+	at org.eclipse.jdt.internal.launching.StandardVMType.getJavaHomeLocation(StandardVMType.java:340)
+	at org.eclipse.jdt.internal.launching.StandardVMType.detectInstallLocation(StandardVMType.java:294)
+	at org.eclipse.jdt.launching.JavaRuntime.detectEclipseRuntime(JavaRuntime.java:2227)
+	at org.eclipse.jdt.launching.JavaRuntime.initializeVMs(JavaRuntime.java:3219)
+	at org.eclipse.jdt.launching.JavaRuntime.getDefaultVMId(JavaRuntime.java:579)
+	at org.eclipse.jdt.launching.JavaRuntime.getDefaultVMInstall(JavaRuntime.java:524)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.resolveVM(JREContainerInitializer.java:162)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.initialize(JREContainerInitializer.java:63)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3195)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2116)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3752)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3196)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3360)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2444)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getRawClasspathEntry(PackageFragmentRoot.java:607)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.internalGetParent(PackageExplorerContentProvider.java:381)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.processDelta(PackageExplorerContentProvider.java:739)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.handleAffectedChildren(PackageExplorerContentProvider.java:820)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.processDelta(PackageExplorerContentProvider.java:763)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.handleAffectedChildren(PackageExplorerContentProvider.java:820)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.processDelta(PackageExplorerContentProvider.java:763)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.elementChanged(PackageExplorerContentProvider.java:139)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1755)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1743)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1576)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1552)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:777)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.becomeWorkingCopy(CompilationUnit.java:97)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.createFileInfo(CompilationUnitDocumentProvider.java:1039)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:481)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.connect(CompilationUnitDocumentProvider.java:1284)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4182)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:262)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1479)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.internalDoSetInput(JavaEditor.java:2544)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.doSetInput(JavaEditor.java:2517)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.doSetInput(CompilationUnitEditor.java:1416)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$1(AbstractTextEditor.java:3172)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2298)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3189)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3214)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:353)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:340)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:999)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:964)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:140)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:405)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:332)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:999)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:765)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:736)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:714)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1209)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:114)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:677)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:765)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:736)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:714)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:528)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:999)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:765)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:736)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:714)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:148)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:765)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:736)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:714)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:148)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:765)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:736)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:714)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:148)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:765)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:736)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:714)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:765)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:736)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:714)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:114)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:64)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:677)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:765)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:736)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:714)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:148)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:765)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:736)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:714)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:667)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:765)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:736)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:714)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1083)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-22 06:55:50.658
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-12-22 06:55:50.696
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.jdt.internal.ui.JavaUIException: Problems reading information from XML 'OpenTypeHistory.xml'
+	at org.eclipse.jdt.internal.corext.util.History.createException(History.java:77)
+	at org.eclipse.jdt.internal.corext.util.History.load(History.java:258)
+	at org.eclipse.jdt.internal.corext.util.History.load(History.java:174)
+	at org.eclipse.jdt.internal.corext.util.OpenTypeHistory.<init>(OpenTypeHistory.java:201)
+	at org.eclipse.jdt.internal.corext.util.OpenTypeHistory.getInstance(OpenTypeHistory.java:187)
+	at org.eclipse.jdt.internal.ui.JavaPlugin.initializeAfterLoad(JavaPlugin.java:462)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:40)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:978)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:541)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.eclipse.jdt.internal.corext.util.History.load(History.java:256)
+	... 6 more
+!SUBENTRY 1 org.eclipse.jdt.ui 4 4 2020-12-22 06:55:50.697
+!MESSAGE Problems reading information from XML 'OpenTypeHistory.xml'
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:978)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:541)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.eclipse.jdt.internal.corext.util.History.load(History.java:256)
+	at org.eclipse.jdt.internal.corext.util.History.load(History.java:174)
+	at org.eclipse.jdt.internal.corext.util.OpenTypeHistory.<init>(OpenTypeHistory.java:201)
+	at org.eclipse.jdt.internal.corext.util.OpenTypeHistory.getInstance(OpenTypeHistory.java:187)
+	at org.eclipse.jdt.internal.ui.JavaPlugin.initializeAfterLoad(JavaPlugin.java:462)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:40)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-12-22 07:05:49.818
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.jdt.internal.ui.JavaUIException: Problems reading information from XML 'QualifiedTypeNameHistory.xml'
+	at org.eclipse.jdt.internal.corext.util.History.createException(History.java:77)
+	at org.eclipse.jdt.internal.corext.util.History.load(History.java:258)
+	at org.eclipse.jdt.internal.corext.util.History.load(History.java:174)
+	at org.eclipse.jdt.internal.corext.util.QualifiedTypeNameHistory.<init>(QualifiedTypeNameHistory.java:36)
+	at org.eclipse.jdt.internal.corext.util.QualifiedTypeNameHistory.getDefault(QualifiedTypeNameHistory.java:29)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaTypeCompletionProposal.computeRelevance(LazyJavaTypeCompletionProposal.java:399)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getRelevance(LazyJavaCompletionProposal.java:384)
+	at org.eclipse.jdt.ui.text.java.CompletionProposalComparator.getRelevance(CompletionProposalComparator.java:85)
+	at org.eclipse.jdt.ui.text.java.CompletionProposalComparator.compare(CompletionProposalComparator.java:62)
+	at org.eclipse.jdt.ui.text.java.CompletionProposalComparator.compare(CompletionProposalComparator.java:1)
+	at org.eclipse.jdt.internal.ui.text.java.RelevanceSorter.compare(RelevanceSorter.java:40)
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.base/java.util.TimSort.sort(TimSort.java:220)
+	at java.base/java.util.Arrays.sort(Arrays.java:1306)
+	at java.base/java.util.ArrayList.sort(ArrayList.java:1721)
+	at java.base/java.util.Collections$SynchronizedList.sort(Collections.java:2504)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.sortProposals(CompletionProposalPopup.java:1989)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$4(AsyncCompletionProposalPopup.java:255)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3987)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3615)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:978)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:541)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.eclipse.jdt.internal.corext.util.History.load(History.java:256)
+	... 43 more
+!SUBENTRY 1 org.eclipse.jdt.ui 4 4 2020-12-22 07:05:49.819
+!MESSAGE Problems reading information from XML 'QualifiedTypeNameHistory.xml'
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:978)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:541)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.eclipse.jdt.internal.corext.util.History.load(History.java:256)
+	at org.eclipse.jdt.internal.corext.util.History.load(History.java:174)
+	at org.eclipse.jdt.internal.corext.util.QualifiedTypeNameHistory.<init>(QualifiedTypeNameHistory.java:36)
+	at org.eclipse.jdt.internal.corext.util.QualifiedTypeNameHistory.getDefault(QualifiedTypeNameHistory.java:29)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaTypeCompletionProposal.computeRelevance(LazyJavaTypeCompletionProposal.java:399)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getRelevance(LazyJavaCompletionProposal.java:384)
+	at org.eclipse.jdt.ui.text.java.CompletionProposalComparator.getRelevance(CompletionProposalComparator.java:85)
+	at org.eclipse.jdt.ui.text.java.CompletionProposalComparator.compare(CompletionProposalComparator.java:62)
+	at org.eclipse.jdt.ui.text.java.CompletionProposalComparator.compare(CompletionProposalComparator.java:1)
+	at org.eclipse.jdt.internal.ui.text.java.RelevanceSorter.compare(RelevanceSorter.java:40)
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.base/java.util.TimSort.sort(TimSort.java:220)
+	at java.base/java.util.Arrays.sort(Arrays.java:1306)
+	at java.base/java.util.ArrayList.sort(ArrayList.java:1721)
+	at java.base/java.util.Collections$SynchronizedList.sort(Collections.java:2504)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.sortProposals(CompletionProposalPopup.java:1989)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1177)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$4(AsyncCompletionProposalPopup.java:255)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3987)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3615)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+!SESSION 2020-12-22 21:23:53.245 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-12-22 21:24:14.240
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-22 21:24:14.240
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@18463720,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@64eeddd8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-22 21:24:30.189
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-12-23 14:56:04.392 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-12-23 14:56:19.613
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2020-12-23 14:56:27.306
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-23 14:56:27.306
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3ea2f72e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@57b33c29,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-23 14:56:44.135
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-12-24 06:28:04.521 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-12-24 06:28:17.307
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2020-12-24 06:28:23.294
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-24 06:28:23.294
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7497a554,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5dd23809,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-24 06:28:36.990
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-12-24 12:28:36.575 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-12-24 12:29:47.966
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2020-12-24 12:29:54.578
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-24 12:29:54.578
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3a8b9458,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7497a554,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-24 12:30:11.301
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-12-24 13:12:02.073 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-12-24 13:12:30.197
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2020-12-24 13:12:47.992
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-24 13:12:47.992
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6e668322,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@75ee6f89,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-24 13:13:23.164
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-12-25 15:59:23.352 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-12-25 16:39:11.745
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2020-12-25 16:39:27.627
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-25 16:39:27.627
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@78bd02c8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@28dacf31,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-25 16:39:50.358
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-12-26 09:27:58.347 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-12-26 09:28:30.077
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-26 09:28:30.077
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@77d95e5a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6339e604,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-26 09:28:43.429
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-12-26 13:13:11.860
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.getChar(AbstractDocument.java:783)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getChar(SynchronizableDocument.java:141)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getBracketHoverInfo(JavaSourceHover.java:177)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo(JavaSourceHover.java:138)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo2(JavaSourceHover.java:118)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2020-12-26 20:08:24.333 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-12-26 20:10:15.632
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2020-12-26 20:10:21.156
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-26 20:10:21.156
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@795faad,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17ae13d5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-26 20:10:37.862
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-12-26 23:17:04.043
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.getChar(AbstractDocument.java:783)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getChar(SynchronizableDocument.java:141)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getBracketHoverInfo(JavaSourceHover.java:177)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo(JavaSourceHover.java:138)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo2(JavaSourceHover.java:118)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2020-12-27 05:59:54.048 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-12-27 06:00:35.257
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2020-12-27 06:00:42.968
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-27 06:00:42.968
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f4adaab,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@69de72ec,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-27 06:00:58.453
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-12-28 00:25:10.270
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.getChar(AbstractDocument.java:783)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getChar(SynchronizableDocument.java:141)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getBracketHoverInfo(JavaSourceHover.java:177)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo(JavaSourceHover.java:138)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo2(JavaSourceHover.java:118)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2020-12-28 12:11:33.451 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-12-28 12:34:27.864
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-28 12:34:27.864
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f44d033,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@283bb8b7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-28 12:34:45.396
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-12-28 22:16:05.083 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-12-29 07:12:50.454
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-29 07:12:50.454
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@591e5fd4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7bbd76b8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-29 07:14:06.360
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-12-29 09:57:09.754 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-12-29 09:58:11.853
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-29 09:58:11.853
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4f525e13,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5d404a3c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-29 09:58:32.052
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-12-29 10:06:24.122
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.getChar(AbstractDocument.java:783)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getChar(SynchronizableDocument.java:141)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getBracketHoverInfo(JavaSourceHover.java:177)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo(JavaSourceHover.java:138)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo2(JavaSourceHover.java:118)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2020-12-30 12:03:57.921 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-12-30 12:05:46.902
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-30 12:05:46.902
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10f8e2d2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@66048ac4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-30 12:06:00.159
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-12-30 14:05:15.031 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data file:/C:/Users/HP/eclipse-workspace/ -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-12-30 14:05:47.133
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-30 14:05:47.133
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@54d60fa1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1cb849b2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-30 14:06:02.577
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.security 1 0 2020-12-30 14:16:46.089
+!MESSAGE New keyring password generated. 
+
+!ENTRY org.eclipse.ui 4 4 2020-12-30 14:19:17.275
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.findNext: {ActionHandler(org.eclipse.ui.texteditor.FindNextAction@19940123)} vs {ActionHandler(org.eclipse.ui.texteditor.FindNextAction@19940123)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+!STACK 0
+java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.texteditor.FindNextAction@19940123),  for 'org.eclipse.ui.edit.findNext',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@4d2cd74), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.texteditor.FindNextAction@19940123),  for 'org.eclipse.ui.edit.findNext',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@4d2cd74), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:271)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
+	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
+	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
+	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
+	at org.eclipse.ui.texteditor.FindNextAction.update(FindNextAction.java:236)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.updateAction(AbstractTextEditor.java:5357)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.updateContentDependentActions(AbstractTextEditor.java:5441)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextListener.lambda$0(AbstractTextEditor.java:615)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3987)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3615)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.ui 4 4 2020-12-30 14:19:17.293
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.findPrevious: {ActionHandler(org.eclipse.ui.texteditor.FindNextAction@1bd5577e)} vs {ActionHandler(org.eclipse.ui.texteditor.FindNextAction@1bd5577e)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+!STACK 0
+java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.texteditor.FindNextAction@1bd5577e),  for 'org.eclipse.ui.edit.findPrevious',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@4d2cd74), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.texteditor.FindNextAction@1bd5577e),  for 'org.eclipse.ui.edit.findPrevious',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@4d2cd74), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:271)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
+	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
+	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
+	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
+	at org.eclipse.ui.texteditor.FindNextAction.update(FindNextAction.java:236)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.updateAction(AbstractTextEditor.java:5357)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.updateContentDependentActions(AbstractTextEditor.java:5441)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextListener.lambda$0(AbstractTextEditor.java:615)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3987)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3615)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.ui 4 4 2020-12-30 14:19:17.295
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.findIncremental: {ActionHandler(org.eclipse.ui.texteditor.IncrementalFindAction@78679286)} vs {ActionHandler(org.eclipse.ui.texteditor.IncrementalFindAction@78679286)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+!STACK 0
+java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.texteditor.IncrementalFindAction@78679286),  for 'org.eclipse.ui.edit.findIncremental',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@4d2cd74), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.texteditor.IncrementalFindAction@78679286),  for 'org.eclipse.ui.edit.findIncremental',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@4d2cd74), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:271)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
+	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
+	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
+	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
+	at org.eclipse.ui.texteditor.IncrementalFindAction.update(IncrementalFindAction.java:118)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.updateAction(AbstractTextEditor.java:5357)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.updateContentDependentActions(AbstractTextEditor.java:5441)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextListener.lambda$0(AbstractTextEditor.java:615)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3987)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3615)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.ui 4 4 2020-12-30 14:19:17.297
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.findIncrementalReverse: {ActionHandler(org.eclipse.ui.texteditor.IncrementalFindAction@5a4700ba)} vs {ActionHandler(org.eclipse.ui.texteditor.IncrementalFindAction@5a4700ba)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+!STACK 0
+java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.texteditor.IncrementalFindAction@5a4700ba),  for 'org.eclipse.ui.edit.findIncrementalReverse',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@4d2cd74), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.texteditor.IncrementalFindAction@5a4700ba),  for 'org.eclipse.ui.edit.findIncrementalReverse',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@4d2cd74), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:271)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
+	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
+	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
+	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
+	at org.eclipse.ui.texteditor.IncrementalFindAction.update(IncrementalFindAction.java:118)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.updateAction(AbstractTextEditor.java:5357)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.updateContentDependentActions(AbstractTextEditor.java:5441)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextListener.lambda$0(AbstractTextEditor.java:615)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3987)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3615)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.ui 4 4 2020-12-30 14:19:27.716
+!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revertLine: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@30e67f98)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@30e67f98)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+!STACK 0
+java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@30e67f98),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@4d2cd74), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@30e67f98),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@4d2cd74), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:271)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
+	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
+	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
+	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
+	at org.eclipse.ui.texteditor.TextEditorAction.update(TextEditorAction.java:99)
+	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.update(QuickDiffRestoreAction.java:96)
+	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.selectionChanged(QuickDiffRestoreAction.java:103)
+	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
+	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
+	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
+	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4110)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3234)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3610)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.ui 4 4 2020-12-30 14:19:29.215
+!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revert: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@3186b07d)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@3186b07d)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+!STACK 0
+java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@3186b07d),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@4d2cd74), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@3186b07d),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@4d2cd74), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:271)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
+	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
+	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
+	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
+	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.update(CompositeRevertAction.java:71)
+	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.selectionChanged(CompositeRevertAction.java:80)
+	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
+	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
+	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
+	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4110)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3234)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3610)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)

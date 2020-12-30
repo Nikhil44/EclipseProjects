@@ -1,0 +1,13 @@
+package exception;
+
+public class Test {
+
+	static ArrayIndexooDemo a;
+	public static void main(String[] args) {
+		System.out.println("Test method");
+		
+		Test.a.
+
+	}
+
+}

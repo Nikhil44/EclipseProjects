@@ -1,0 +1,18 @@
+package com;
+
+
+
+public class Practice1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String st="Nikhil";
+System.out.println(st);
+
+ char [] a= st.toCharArray();
+  for(int i=a.length; i>0;i--) {
+	  System.out.println(a[i]);
+  }
+	}
+
+}

@@ -1,0 +1,11 @@
+package iostream;
+
+import java.io.FileInputStream;
+
+public class FileInputOutputStream {
+
+	public static void main(String[] args) {
+		FileInputOutputStream file = new FileInputOutputStream();
+	}
+
+}

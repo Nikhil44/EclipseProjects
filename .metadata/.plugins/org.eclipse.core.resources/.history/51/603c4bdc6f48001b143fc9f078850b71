@@ -1,0 +1,14 @@
+package iostream;
+
+import java.io.File;
+
+public class BufferedReaderAndWordCount {
+
+	public static void main(String[] args) {
+		File inputfile = new File("C:\\Users\\HP\\Desktop\\FileReader.txt.txt");
+		FileReader fr=null;
+		BufferReader br=null;
+
+	}
+
+}

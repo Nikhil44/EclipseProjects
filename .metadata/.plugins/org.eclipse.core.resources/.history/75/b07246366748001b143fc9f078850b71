@@ -1,0 +1,13 @@
+package iostream;
+
+import java.io.FileOutputStream;
+
+public class FIleOutputStream {
+
+	public static void main(String[] args) {
+		
+		FileOutputStream output = new FileOutputStream();
+
+	}
+
+}

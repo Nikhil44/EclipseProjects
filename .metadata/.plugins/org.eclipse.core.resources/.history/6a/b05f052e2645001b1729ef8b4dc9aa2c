@@ -1,0 +1,12 @@
+package inheritancepractice.MultilevelInheritance;
+
+public class MultiLevelTest extends Child{
+
+	public static void main(String[] args) {
+		Child ch = new Child();
+		ch.f1();
+		ch.f2();
+   
+	}
+
+}
