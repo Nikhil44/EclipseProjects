@@ -26,7 +26,8 @@ public class ArrayBasics {
 		System.out.println("Elements of array : "+arr1[i]);
 	}
 		System.out.println("The value of array to string : "+Arrays.toString(arr2));
-
+		
+                 System.out.println("adding new line");
 		
 		
 	}
