@@ -1,9 +1,0 @@
-package abstractionAssignment;
-
-abstract public class DELL implements TouchScreenLaptop {
-	public void scroll() {
-		
-	}
-	
-
-}

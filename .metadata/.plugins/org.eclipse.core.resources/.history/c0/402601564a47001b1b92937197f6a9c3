@@ -1,9 +1,0 @@
-package customeexception;
-
-public class UncheckedCustomException {
-
-	public static void main(String[] args) {
-
-	}
-
-}

@@ -1,9 +1,0 @@
-package interfaces;
-
-public interface Car {
-	
-	//Interface methods are public and abstract by default.
-	void go();
-	void stop();
-
-}

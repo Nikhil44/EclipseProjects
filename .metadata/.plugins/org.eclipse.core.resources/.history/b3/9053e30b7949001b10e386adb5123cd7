@@ -1,9 +1,0 @@
-package map;
-
-public class HashMapDemo {
-
-	public static void main(String[] args) {
-Map<String, Integer> hashmap= new HashMap<>();
-	}
-
-}

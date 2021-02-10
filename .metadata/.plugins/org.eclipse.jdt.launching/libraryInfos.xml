@@ -2,6 +2,7 @@
 <libraryInfos>
     <libraryInfo home="C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932\jre" version="14.0.2"/>
     <libraryInfo home="C:\Program Files\Java\jdk-15.0.1" version="15.0.1"/>
+    <libraryInfo home="C:\Program Files\Java\jdk-11.0.10" version="11.0.10"/>
     <libraryInfo home="C:\Users\HP\AppData\Local\Temp\eoiABBD.tmp\plugins\org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_14.0.2.v20200815-0932" version="14.0.2"/>
     <libraryInfo home="C:\Program Files\Java\jdk-15.0.1\bin" version="15.0.1"/>
 </libraryInfos>

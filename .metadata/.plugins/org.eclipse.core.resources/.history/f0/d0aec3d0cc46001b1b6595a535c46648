@@ -1,9 +1,0 @@
-package encapsulation;
-
-public class Customer {
-	String firstName;
-	String lastName;
-	String Creditcard;
-	
-
-}

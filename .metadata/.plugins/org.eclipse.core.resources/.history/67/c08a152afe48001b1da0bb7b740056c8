@@ -1,9 +1,0 @@
-package collections;
-
-public class StringTreeSet {
-
-	public static void main(String[] args) {
-
-	}
-
-}

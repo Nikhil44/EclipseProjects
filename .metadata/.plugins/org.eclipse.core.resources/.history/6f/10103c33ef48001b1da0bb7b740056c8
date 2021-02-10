@@ -1,9 +1,0 @@
-package collections;
-
-public class HasSet1 {
-
-	public static void main(String[] args) {
-
-	}
-
-}
