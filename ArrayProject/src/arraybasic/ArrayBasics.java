@@ -27,7 +27,7 @@ public class ArrayBasics {
 	}
 		System.out.println("The value of array to string : "+Arrays.toString(arr2));
 		
-                 System.out.println("adding new line uuu");
+                 System.out.println("adding new line uuu/mm/dd");
 		
 		
 	}
